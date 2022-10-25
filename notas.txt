@@ -1,0 +1,4 @@
+FLUENT API
+tecnica de entity framework avenazada
+configurar los modelos base de datos
+disenar base de datos para escenarios avanzados
