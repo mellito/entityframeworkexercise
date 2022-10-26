@@ -13,6 +13,7 @@ public class Tarea
     public Prioridad PrioridadTarea { get; set; }
     public DateTime FechaCreacion { get; set; }
     public virtual Categoria Categoria { get; set; }
+    public bool estado {get;set;}
    // [NotMapped]
     public string Resumen{get;set;}
 

@@ -1,4 +1,30 @@
+<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10"/>
+<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.10"/>
+<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10"/>
+
 FLUENT API
 tecnica de entity framework avenazada
 configurar los modelos base de datos
 disenar base de datos para escenarios avanzados
+
+migracion 
+historial de cambios y hacer cambios en la base de datos
+se necesita una herramienta para hacer las migraciones
+y esta es ef tool
+
+dotnet tool install --global dotnet-ef
+
+para crear una migracion se utiliza el codigo 
+
+
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.5 se necesita instalar esta libreria
+
+dotnet ef migrations add nombremigracion se recomienda para la primera InitialCreate
+
+dotnet ef database update => para actualizar la base de datos
+
+ciclo crear migraciones
+agregar o quiar campos de los modelos, hacerlo mismo en el context, ejecutar dotnet ef migrations add nombremigracion
+ y luego dotnet ef database update 
+
+ agregando datos semilla
